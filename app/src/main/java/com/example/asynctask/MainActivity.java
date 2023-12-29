@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         task.execute(10);
     }
 
+    // AsyncTask is designed to run work in the background and the results
+    // are published in the UI thread.
     private static class ExampleAsyncTask extends AsyncTask<Integer, Integer, String> {
         private WeakReference<MainActivity> activityWeakReference;
 
